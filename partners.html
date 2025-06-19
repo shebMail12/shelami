@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#121212]">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ሸላሚዬ – For Brands & Partners</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', 'Roboto', sans-serif; color: #F2F2F2; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', 'Montserrat', sans-serif; }
+    .glass {
+      background: rgba(18, 18, 18, 0.6);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+      backdrop-filter: blur(8px);
+      border-radius: 1.5rem;
+      border: 1.5px solid rgba(255,255,255,0.12);
+    }
+    .neon {
+      box-shadow: 0 0 8px #00FFB2, 0 0 16px #0F62FE;
+    }
+    .neon-text {
+      text-shadow: 0 0 8px #00FFB2, 0 0 16px #0F62FE;
+    }
+    .glow {
+      box-shadow: 0 0 16px #6C63FF, 0 0 32px #A66CFF;
+    }
+    .transition-fade {
+      transition: opacity 0.6s;
+    }
+    .modal-bg {
+      background: rgba(18,18,18,0.85);
+      backdrop-filter: blur(2px);
+    }
+    .countdown-glow {
+      text-shadow: 0 0 12px #00FFB2, 0 0 24px #0F62FE;
+    }
+    .social-glow:hover {
+      box-shadow: 0 0 8px #00FFB2, 0 0 16px #6C63FF;
+      transition: box-shadow 0.2s;
+    }
+    .hamburger span {
+      display: block;
+      width: 28px;
+      height: 3px;
+      margin: 6px 0;
+      background: #F2F2F2;
+      border-radius: 2px;
+      transition: 0.4s;
+    }
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(-45deg) translate(-6px, 6px);
+    }
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(45deg) translate(-6px, -6px);
+    }
+  </style>
+</head>
+<body class="bg-[#121212]">
+<!-- Sticky Navbar (Desktop) -->
+<nav id="navbar" class="hidden md:flex fixed top-0 left-0 w-full z-30 glass transition-fade backdrop-blur-md px-4 py-2 items-center justify-between md:px-12" style="opacity:1;">
+  <div class="flex items-center space-x-2">
+    <span class="text-2xl font-bold text-[#0F62FE]">QRDraw</span>
+    <span class="hidden md:inline text-sm text-[#F2F2F2]/60 font-semibold">Scan. Win. Celebrate.</span>
+  </div>
+  <div class="flex space-x-8 font-semibold text-[#F2F2F2]">
+    <a href="index.html" class="hover:text-[#00FFB2] transition">Home</a>
+    <a href="how.html" class="hover:text-[#00FFB2] transition">How It Works</a>
+    <a href="rewards.html" class="hover:text-[#00FFB2] transition">Rewards</a>
+    <a href="partners.html" class="hover:text-[#00FFB2] transition text-[#00FFB2]">For Brands</a>
+    <a href="contact.html" class="hover:text-[#00FFB2] transition">Contact</a>
+  </div>
+</nav>
+<!-- Bottom Nav (Mobile) -->
+<nav id="bottomNav" class="md:hidden fixed bottom-0 left-0 w-full z-30 glass backdrop-blur-md flex justify-between px-2 py-1 border-t border-[#222]/60">
+  <a href="index.html" class="flex-1 flex flex-col items-center py-2 text-xs text-[#F2F2F2] font-semibold">
+    <svg width="24" height="24" fill="none"><path d="M3 12L12 4l9 8v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7z" stroke="#F2F2F2" stroke-width="2"/></svg>
+    Home
+  </a>
+  <a href="how.html" class="flex-1 flex flex-col items-center py-2 text-xs text-[#F2F2F2] font-semibold">
+    <svg width="24" height="24" fill="none"><circle cx="12" cy="12" r="10" stroke="#F2F2F2" stroke-width="2"/><path d="M12 8v4l3 3" stroke="#F2F2F2" stroke-width="2"/></svg>
+    HowItWorks
+  </a>
+  <a href="rewards.html" class="flex-1 flex flex-col items-center py-2 text-xs text-[#F2F2F2] font-semibold">
+    <svg width="24" height="24" fill="none"><rect x="4" y="8" width="16" height="12" rx="2" stroke="#F2F2F2" stroke-width="2"/><path d="M8 8V6a4 4 0 0 1 8 0v2" stroke="#F2F2F2" stroke-width="2"/></svg>
+    Rewards
+  </a>
+  <a href="partners.html" class="flex-1 flex flex-col items-center py-2 text-xs text-[#00FFB2] font-bold">
+    <svg width="24" height="24" fill="none"><path d="M16 12a4 4 0 1 0-8 0" stroke="#00FFB2" stroke-width="2"/><rect x="2" y="17" width="20" height="5" rx="2" stroke="#00FFB2" stroke-width="2"/></svg>
+    Brands
+  </a>
+  <a href="contact.html" class="flex-1 flex flex-col items-center py-2 text-xs text-[#F2F2F2] font-semibold">
+    <svg width="24" height="24" fill="none"><path d="M21 10.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v4.5" stroke="#F2F2F2" stroke-width="2"/><path d="M3 10.5l9 6 9-6" stroke="#F2F2F2" stroke-width="2"/></svg>
+    Contact
+  </a>
+</nav>
+<!-- For Brands & Partners Section -->
+<section id="partners" class="py-24 min-h-screen flex items-center justify-center">
+  <div class="max-w-4xl mx-auto text-center">
+    <h3 class="text-2xl md:text-3xl font-bold mb-6 neon-text">For Brands & Partners</h3>
+    <p class="mb-8 text-lg text-[#F2F2F2]/80">Product activation made easy — reward loyal customers and boost engagement with QRDraw.</p>
+    <div class="glass p-8 max-w-xl mx-auto mb-8">
+      <ul class="text-left space-y-3">
+        <li><span class="text-[#00FFB2] font-bold">•</span> Drive repeat purchases with instant rewards</li>
+        <li><span class="text-[#A66CFF] font-bold">•</span> Real-time analytics on campaign performance</li>
+        <li><span class="text-[#6C63FF] font-bold">•</span> Seamless integration with your packaging</li>
+      </ul>
+    </div>
+    <button onclick="window.location.href='contact.html'" class="px-8 py-3 rounded-full bg-gradient-to-r from-[#6C63FF] to-[#A66CFF] text-white font-bold text-lg neon hover:scale-105 transition">Partner With Us</button>
+  </div>
+</section>
+</body>
+</html> 
